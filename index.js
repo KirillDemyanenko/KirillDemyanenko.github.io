@@ -2085,7 +2085,7 @@ var Controller = /** @class */ (function () {
     /* Controller launch */
     Controller.start = function (port) {
         var _this = this;
-        this.webSocket = new WebSocket("wss://194.158.205.78:".concat(port));
+        this.webSocket = new WebSocket("ws://194.158.205.78:".concat(port));
         setTimeout(function () {
             if (document.cookie.includes('user=')) {
                 var cookie = document.cookie.split(';').filter(function (value) { return value.includes('user='); });
